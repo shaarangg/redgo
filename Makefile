@@ -12,11 +12,13 @@ endif
 
 BINARY_NAME=$(BUILD_DIR)/$(BINARY)$(BINARY_EXT)
 
+run: build
+	$(BINARY_NAME)
+
+	
 build:
 	go build -o $(BINARY_NAME)
 
-run: build
-	$(BINARY_NAME)
 
 clean:
 	$(RM) $(BINARY_NAME)
