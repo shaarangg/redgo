@@ -102,6 +102,7 @@ redis-cli
 
 ### Project Structure
 
+```
 redgo/
 ├── main.go # Server implementation
 ├── resp.go # RESP protocol implementation
@@ -109,6 +110,7 @@ redgo/
 ├── aof.go # AOF persistence
 ├── go.mod # Go module file
 └── Makefile # Build automation
+```
 
 ### Building
 
